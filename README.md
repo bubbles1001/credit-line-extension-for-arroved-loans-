@@ -1,4 +1,4 @@
-# **Credit Risk Modeling using Logistic Regression, Random Forest, and LightGBM**
+# **Credit Risk Modeling using Logistic Regression, Random Forest, and LightGBM and SHAP **
 
 
 ## **Objective**
@@ -51,6 +51,14 @@ Given a set of borrower and loan attributes, predict the likelihood of loan defa
 + Bosting models confirmed the presence of non-linear effects and feature interactions
 + Threshold tuning demonstrated significant recall improvement for defaulters
 + Time-based (issue_ordinal), income, debt, and utilization features emerged as dominant risk drivers
+  
+## SHAP Interpretation of the LightGBM Credit Risk Model
+
+To better understand how the model predicts loan default risk, SHAP (SHapley Additive exPlanations) was used to analyze feature contributions to the model’s predictions. The SHAP summary plot highlights the most influential variables and how they impact predicted default probability. 
+
+**Overall Insight**
+
+The SHAP analysis shows that the model relies primarily on economically meaningful credit risk indicators such as borrower credit grade, debt-to-income ratio, interest rate, and credit utilization. These variables are widely used in real-world credit scoring systems, indicating that the model is capturing realistic borrower risk patterns rather than relying on spurious correlations.
 
 ## Business Insights
 
